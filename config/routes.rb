@@ -7,7 +7,8 @@ Rails.application.routes.draw do
 
   get 'somchai', to: "main#xxx"
 
-  get 'main/welcome', to: "main#welcome"
+  get 'welcome', to: "main#welcome"
 
-  get 'main/contract_us', to: "main#contract"
+  get 'contact_us', to: "main#contact"
+
 end
