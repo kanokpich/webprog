@@ -1,0 +1,11 @@
+<h1>Ex2#loop</h1>
+<p>Find me in app/views/ex2/loop.html.erb</p>
+
+<% if params[:a] == nil || params[:b] == nil %>
+    Invalid a or b
+
+<% else %>
+    <% for x in params[:a]..params[:b] %>
+        <%= x %>
+    <% end %>
+<% end %>
