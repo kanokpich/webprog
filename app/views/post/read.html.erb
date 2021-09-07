@@ -1,0 +1,11 @@
+<h1>User#read</h1>
+<p>Find me in app/views/post/read.html.erb</p>
+
+User <%= @user.name %> has posted :
+
+<br>
+
+<% for i in @posts %>
+    - "<%= i.msg %>"
+    <br>
+<% end %>

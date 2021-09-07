@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'post/create'
   get 'ex2/loop'
   get 'main/abc'
   get 'main/xxx'
@@ -13,4 +14,8 @@ Rails.application.routes.draw do
   get 'contact_us', to: "main#contact"
 
   get 'loop', to: "ex2#loop"
+
+  get 'main/test', to: "main#test"
+
+  get 'user/read', to: "post#read"
 end
