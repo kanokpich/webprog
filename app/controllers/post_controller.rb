@@ -1,6 +1,7 @@
 class PostController < ApplicationController
   def create
     Post.create(msg:params[:msg],user_id:params[:user_id])
+    @name = User.find(params[:user_id]).name
   end
 
   def read 
